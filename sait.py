@@ -1,6 +1,6 @@
 from selenium import webdriver
-from .loki import shopLokators
-from .chumakov_jopa import BasePage
+from loki import shopLokators
+from chumakov_jopa import BasePage
 
 
 class Page(BasePage):
