@@ -1,4 +1,12 @@
-from 'test-case.sait' import Page
+import pytest
+from selenium import webdriver
+
+from sait import Page
+
+@pytest.fixture()
+def browser():
+    driver = webdriver.Chrome()
+    return driver
 
 
 def test_can_search_product(browser):
